@@ -190,7 +190,11 @@ footballApp.controller('fixtureController', ['$scope', '$filter', 'seasonFactory
 		$scope.nextRound = function(matchRound){
 			$scope.preIsDisabled = false;
 			$scope.nextIsDisabled = false;
-			$scope.nextMatchday = matchRound + 1;
+			if(matchRound === $scope.lastMatchDay){
+				$scope.nextMatchday = matchRound;
+			}else{
+				$scope.nextMatchday = matchRound + 1;
+			}
 			$scope.currentFixtures = $filter('filter')($scope.fixtures, function(fil){
 			return fil.matchday === $scope.nextMatchday;
 			});
