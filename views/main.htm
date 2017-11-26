@@ -1,0 +1,37 @@
+<div class="backgroundimg">
+	<div class="container">
+		<div class="col-md-12 landingInput">
+			<div class="row" ng-controller="mainController">
+				<div class="col-md-6 col-md-offset-3">
+						<h3 id="mainh3">League Fixture and Score.</h3>
+					<div class="form-group">
+						<select name="selectLeague" id="selectLeague" class="form-control" 
+						ng-model="leagueId" ng-options="league as league.caption for league in leagues track by league.id">
+							<option value="">Loding...</option>
+						</select>
+					</div>
+						<a href="#/fixture" id="mainBtn" class="btn btn-primary" ng-click="reClass()">Get Fixture</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>Coded with 
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+ 						 
+ 						<i class="fa fa-futbol-o" aria-hidden="true"></i>
+ 						 and 
+ 						 <i class="fa fa-coffee" aria-hidden="true"></i>
+ 					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

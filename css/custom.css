@@ -1,0 +1,86 @@
+body html{
+	padding: 0;
+	margin: 0;
+	min-height: 100vh;
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+.backgroundimg{
+	background-image: url(../img/football.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100vh;
+	width: 100%;
+	z-index: -25px;
+}
+
+.noimg{
+	background-image: none;
+}
+
+.landingInput{
+	padding-top: 150px;
+}
+
+.topPadding{
+	padding-top: 100px;
+}
+
+#mainh3{
+	color: #FFFFFF;
+}
+
+#league {
+	margin-top: 54px;
+}
+
+#loadingSpinner{
+	margin-bottom: 20px;
+}
+
+.footer{
+	background: #E3E3E3;
+	border-top: 1px solid #DDDDDD;
+	height: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Lato' sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #666666;
+}
+
+@-moz-document url-prefix() {
+  	fieldset { display: table-cell; }
+}
+
+/* animation */
+.slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.slide.ng-enter,
+.slide.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.slide.ng-enter {
+    left: 100%;
+}
+.slide.ng-enter-active {
+    left: 0;
+}
+.slide.ng-leave {
+    left: 0;
+}
+.slide.ng-leave-active {
+    left: -100%;
+}
